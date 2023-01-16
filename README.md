@@ -1,1 +1,2 @@
-# first-flask-site-todoapp
+# About 
+- this is my first flask app 
