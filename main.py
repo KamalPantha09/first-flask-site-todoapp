@@ -1,10 +1,13 @@
-from flask import Flask
+from flask import Flask, render_template
 app = Flask(__name__)
 
-@app.route("/", methods= ['POST'])
+@app.route("/", methods= ['GET'])
 def home():
-    # TODO : render a html page 
-    pass
+    return render_template('home/home.html')
+
+@app.route("/about", methods= ['GET'])
+def about():
+    return render_template('about/about.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
